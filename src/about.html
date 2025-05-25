@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Owly</title>
+   <!--favicon-->
+   <link rel="icon" type="image/png" href="./images/logo-owly.png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet" />
+<link href="style.css" rel="stylesheet">
+<!--icone social-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+ <!-- Navbar (placeholder) -->
+ <nav class="fixed top-0 left-0 w-full z-50 bg-gray-50 shadow">
+    <div class="max-w-screen-xl mx-auto flex items-center justify-between p-4">
+      <!-- Logo + Button -->
+      <div class="flex items-center space-x-4">
+        <img src="./images/logo-owly.png" alt="Logo Owly" class="h-12 w-auto" />
+        <button id="toggleFontButton" class="!bg-amber-400 text-gray-800 py-2 px-3 rounded-lg font-semibold hover:cursor-pointer">
+          Attiva font Lexend
+        </button>
+      </div>
+  
+      <!-- Hamburger Icon -->
+      <button id="menuToggle" class="md:hidden text-gray-700 hover:text-blue-700 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+  
+      <!-- Menu Items -->
+      <ul id="menu"
+        class="hidden md:flex flex-col md:flex-row gap-4 md:gap-8 md:mt-0 items-center md:items-center font-medium bg-gray-50 md:bg-transparent p-4 md:p-0 rounded-lg md:rounded-none absolute md:relative top-full md:top-auto left-0 w-full md:w-auto z-40">
+        <li>
+          <a href="../dist/index.html"
+            class="block py-2 px-3 text-gray-900 active:bg-amber-400 md:hover:bg-transparent md:hover:text-blue-700 rounded">Home</a>
+        </li>
+        <li>
+          <a href="../dist/about.html"
+            class="block py-2 px-3 text-gray-900 active:bg-amber-400 hover:bg-blue-100 md:hover:bg-transparent md:hover:text-blue-700 rounded">About</a>
+        </li>
+        <li>
+          <a href="../dist/contact.html"
+            class="block py-2 px-3 text-gray-900 active:bg-amber-400 hover:bg-blue-100 md:hover:bg-transparent md:hover:text-blue-700 rounded">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+<div id="content" class="bg-gray-50 text-[#003f5c] min-h-screen p-8">
+
+  <div class="bg-gray-50 text-gray-800 min-h-screen p-8">
+      <!-- Titolo principale -->
+      <div class="text-center mt-40 mb-96 md:mt-6 md:mb-16 ">
+        <h1 class="text-4xl font-bold mb-4 text-gray-800 reveal"> Cosa succede quando un gufo ama i libri?</h1>
+        <p class="text-xl text-[#003f5c] reveal">Nasce Owly, la web app che ti aiuta a scoprire storie, avventure e mondi meravigliosi... un libro alla volta!</p>
+      </div>
+    
+      <!-- Sezione "L'idea" e "Missione" -->
+      <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Card "L'idea" -->
+        <div class="bg-gray-800 text-[#F9F2F2] p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow reveal">
+          <h2 class="text-2xl font-semibold mb-4">✨ L'idea</h2>
+          <p>La nostra avventura è iniziata in una classe. I fondatori, tutti insegnanti, affrontavano quotidianamente montagne di libri e studenti pieni di curiosità. Così hanno pensato: "Perché non creare un posto dove trovare subito il libro giusto?" Da lì, è nata Owly.</p>
+        </div>
+    
+        <!-- Card "Missione" -->
+        <div class="bg-gray-800 text-[#F9F2F2] p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow reveal">
+          <h2 class="text-2xl font-semibold mb-4">🎯 La nostra missione</h2>
+          <p>Vogliamo accendere la scintilla della lettura nei più piccoli, trasformando ogni ricerca in una scoperta. Che tu sia un bambino curioso, un insegnante in cerca di strumenti, o un genitore a caccia di storie per la buonanotte… Owly è qui per aiutarti.</p>
+        </div>
+      </div>
+    
+      <!-- Sezione "Come funziona" con una card aggiuntiva -->
+      <div class="max-w-4xl mx-auto mt-8">
+        <!-- Card "Come funziona" -->
+        <div class="bg-gray-800 text-[#F9F2F2] p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow mb-8 reveal">
+          <h2 class="text-2xl font-semibold mb-4">🔎 Come funziona</h2>
+          <p>Basta scrivere una parola, un autore o un genere, e Owly ti guiderà tra titoli, copertine e trame, come una piccola biblioteca magica sempre aperta. Ogni libro ha una scheda dettagliata che ti aiuta a capire subito se è quello giusto per te.</p>
+        </div>
+    
+        <!-- Card "Accessibilità" -->
+        <div class="bg-[#E69F00] text-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow reveal" id="pippo">
+          <h3 class="text-xl font-semibold mb-4">♿ Accessibilità: lettura per tutti</h3>
+          <p>Leggere è un diritto. E Owly fa di tutto per non lasciare indietro nessuno:</p>
+          <ul class="list-disc pl-5 mt-2">
+            <li>Font ad alta leggibilità per chi convive con la dislessia (basta un click!).</li>
+            <li>Colori pensati anche per chi ha difficoltà visive o daltonismo.</li>
+            <li>Interfaccia chiara e pulita, per non distrarsi mai dalla cosa più importante: il contenuto.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+<!--footer-->
+
+<footer id="footer" class="bg-gray-800 text-white py-8">
+  <div class="w-full mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+     <!-- Links Social -->
+     <div class="flex gap-4">
+        <a href="https://www.instagram.com/__3rr0r__404___/" target="_blank" class="text-white hover:text-amber-400">
+           <i class="fab fa-instagram text-2xl"></i> <!-- Icona Instagram -->
+        </a>
+        <a href="https://www.linkedin.com/in/antonio-laudani-25aa3a229/" target="_blank" class="text-white hover:text-amber-400">
+           <i class="fab fa-linkedin-in text-2xl"></i> <!-- Icona LinkedIn -->
+           </a>
+           <a href="#" target="_blank" class="text-white hover:text-amber-400">
+            <i class="fa-brands fa-github text-2xl"></i><!-- Icona Github -->
+        </a>
+     </div>
+     <!-- Copyright -->
+     <p class="mt-4 md:mt-0">© 2025 Owly. Tutti i diritti riservati.</p>
+  </div>
+</footer>
+
+
+
+
+
+
+</body>
+</html>
+

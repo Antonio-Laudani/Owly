@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>contact - Owly</title>
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="./images/logo-owly.png"/>
+ <!--font dislessici-->
+ <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+ <!--icone social-->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-50 flex flex-col items-center justify-center min-h-screen">
+ 
+<!--navbar-->
+<nav class="fixed top-0 left-0 w-full z-50 bg-gray-50 shadow">
+    <div class="max-w-screen-xl mx-auto flex items-center justify-between p-4">
+      <!-- Logo + Button -->
+      <div class="flex items-center space-x-4">
+        <img src="./images/logo-owly.png" alt="Logo Owly" class="h-12 w-auto" />
+        <button id="toggleFontButton" class="!bg-amber-400 text-gray-800 py-2 px-3 rounded-lg font-semibold cursor-pointer">
+          Attiva font Lexend
+        </button>
+      </div>
+
+      <!-- Hamburger Icon -->
+      <button id="menuToggle" class="md:hidden text-gray-700 hover:text-blue-700 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <!-- Menu Items -->
+      <ul id="menu" class="hidden md:flex flex-col md:flex-row gap-4 md:gap-8 md:mt-0 items-center md:items-center font-medium bg-gray-50 md:bg-transparent p-4 md:p-0 rounded-lg md:rounded-none absolute md:relative top-full md:top-auto left-0 w-full md:w-auto z-40">
+        <li>
+          <a href="../dist/index.html" class="block py-2 px-3 text-gray-900 active:bg-amber-400 md:hover:bg-transparent md:hover:text-blue-700 rounded">Home</a>
+        </li>
+        <li>
+          <a href="../dist/about.html" class="block py-2 px-3 text-gray-900 active:bg-amber-400 hover:bg-blue-100 md:hover:bg-transparent md:hover:text-blue-700 rounded">About</a>
+        </li>
+        <li>
+          <a href="../dist/contact.html" class="block py-2 px-3 text-gray-900 active:bg-amber-400 hover:bg-blue-100 md:hover:bg-transparent md:hover:text-blue-700 rounded">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+    <!--form contatti-->
+  <div
+    class="bg-white rounded-2xl shadow-xl p-8 w-full max-w-lg opacity-0 translate-y-8 transition-all duration-1000 ease-in-out mt-28"
+    id="contactForm"
+  >
+    <h2 class="text-2xl font-bold mb-6 text-gray-800 text-center">Contattaci</h2>
+
+    <form>
+      <div class="mb-4">
+        <label class="block text-gray-700 font-medium mb-2" for="name">Nome</label>
+        <input type="text" id="name" name="name" autocomplete="name" placeholder="Il tuo nome"
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400" />
+      </div>
+
+      <div class="mb-4">
+        <label class="block text-gray-700 font-medium mb-2" for="email">Email</label>
+        <input type="email" id="email" name="email" autocomplete="email" placeholder="La tua email"
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400" />
+      </div>
+
+      <div class="mb-4">
+        <label class="block text-gray-700 font-medium mb-2" for="message">Messaggio</label>
+        <textarea id="message" name="message" rows="5" placeholder="Scrivi il tuo messaggio..."
+          class="w-full px-4 py-2 border border-gray-300 rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-amber-400"></textarea>
+      </div>
+
+      <button
+        type="submit"
+        class="w-full bg-amber-400 text-black py-2 rounded-lg font-semibold hover:bg-amber-500 transition"
+      >
+        Invia messaggio
+      </button>
+    </form>
+  </div>
+<!--footer-->
+<footer id="footer" class="bg-gray-800 text-white py-8 mt-auto">
+    <div class="w-screen mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <!-- Links Social -->
+      <div class="flex gap-4">
+        <a href="https://www.instagram.com/__3rr0r__404___/" target="_blank" class="text-white hover:text-amber-400">
+          <i class="fab fa-instagram text-2xl"></i> <!-- Icona Instagram -->
+        </a>
+        <a href="https://www.linkedin.com/in/antonio-laudani-25aa3a229/" target="_blank" class="text-white hover:text-amber-400">
+          <i class="fab fa-linkedin-in text-2xl"></i> <!-- Icona LinkedIn -->
+        </a>
+        <a href="#" target="_blank" class="text-white hover:text-amber-400">
+          <i class="fa-brands fa-github text-2xl"></i><!-- Icona Github -->
+      </a>
+      </div>
+      <!-- Copyright -->
+      <p class="mt-4 md:mt-0">© 2025 Owly. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+
+
+
+
+
+</body>
+</html>
