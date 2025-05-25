@@ -41,6 +41,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         { from: 'src/images', to: 'images' },  // copia tutta la cartella src/images in dist/images
+        { from: 'src/_redirects', to: '_redirects' },
       ],
     }),
   ],
