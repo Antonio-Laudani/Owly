@@ -16,15 +16,25 @@ export function closeModal() {
   document.body.classList.remove('overflow-hidden');
 }
 
-// ✅ Aggiungi controllo
+// Aggiungi controllo
 if (closeModalBtn) {
   closeModalBtn.addEventListener('click', closeModal);
 }
 
-// ✅ Anche qui controllo
+// Anche qui controllo
 if (modal) {
   window.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+      closeModal();
+    }
+  });
+}
+
+//Chiudi la modale cliccando fuori solo su mobile
+if (modal && window.innerWidth <= 768) {
+  modal.addEventListener('click', (e) => {
+    // Se clicchi sull'overlay (e non sul contenuto)
+    if (e.target === modal) {
       closeModal();
     }
   });
