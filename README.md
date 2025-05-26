@@ -16,3 +16,6 @@ Include:
 
 ## Autore
 Antonio Laudani – [GitHub](https://github.com/Antonio-Laudani)
+
+## N.B.
+Il form contatti è puramente a scopo visivo, non funziona.
