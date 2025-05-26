@@ -40,6 +40,8 @@ export function displayResultsFromWorks(works) {
     btn.addEventListener('click', async () => {
       btn.disabled = true;
       btn.textContent = 'Caricamento...';
+      btn.blur();  // togli il focus subito qui
+
       const description = await fetchDescription(work.key);
       openModal(description);
       btn.disabled = false;
