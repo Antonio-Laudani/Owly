@@ -39,8 +39,8 @@ export function displayResultsFromWorks(works) {
     const btn = card.querySelector('.openDescriptionBtn');
     btn.addEventListener('click', async () => {
       btn.disabled = true;
-      btn.textContent = 'Caricamento...';
       btn.blur();  // togli il focus subito qui
+      btn.textContent = 'Caricamento...';
 
       const description = await fetchDescription(work.key);
       openModal(description);
