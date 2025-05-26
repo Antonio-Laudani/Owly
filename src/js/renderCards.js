@@ -39,7 +39,6 @@ export function displayResultsFromWorks(works) {
     const btn = card.querySelector('.openDescriptionBtn');
     btn.addEventListener('click', async () => {
       btn.disabled = true;
-      btn.style.textDecoration = 'none';  // toglie underline subito
       btn.textContent = 'Caricamento...';
 
       const description = await fetchDescription(work.key);
