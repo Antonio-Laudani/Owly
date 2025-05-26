@@ -31,7 +31,7 @@ export function displayResultsFromWorks(works) {
            onerror="this.onerror=null;this.src='${genericCover}';">
       <h3 class="font-semibold text-lg mb-2">${title}</h3>
       <p class="text-sm text-gray-600 mb-2">${authors}</p>
-      <button class="openDescriptionBtn bg-amber-400 p-2 rounded-md text-black hover:bg-amber-600 hover:cursor-pointer text-center text-sm font-medium">
+      <button class="openDescriptionBtn bg-amber-400 p-2 rounded-md text-black active:bg-amber-600 md:hover:bg-amber-600 hover:cursor-pointer text-center text-sm font-medium">
         Mostra descrizione
       </button>
     `;
